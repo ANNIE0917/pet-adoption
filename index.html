@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopta una Mascota</title>
+  <style>
+    /* Estilos generales de la página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Encabezado principal */
+    header {
+      background-color: #ffcc70;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    /* Contenedor de mascotas */
+    .pets-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    /* Tarjeta individual de cada mascota */
+    .pet-card {
+      background-color: #fff8e1;
+      border: 2px solid #ffcc70;
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .pet-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Emoji de mascota como "imagen" */
+    .pet-emoji {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    /* Botón de adopción */
+    .adopt-button {
+      background-color: #ff9900;
+      border: none;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .adopt-button:hover {
+      background-color: #e68600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Adopta una Mascota</h1>
+    <p>¡Dales un hogar lleno de amor! ❤️</p>
+  </header>
+
+  <section class="pets-container">
+    <div class="pet-card">
+      <span class="pet-emoji">🐶</span>
+      <h2>Max</h2>
+      <p>Edad: 3 años<br>Raza: Labrador</p>
+      <button class="adopt-button">¡Adóptame!</button>
+    </div>
+
+    <div class="pet-card">
+      <span class="pet-emoji">🐱</span>
+      <h2>Luna</h2>
+      <p>Edad: 2 años<br>Raza: Criolla</p>
+      <button class="adopt-button">¡Adóptame!</button>
+    </div>
+
+    <div class="pet-card">
+      <span class="pet-emoji">🐰</span>
+      <h2>Copito</h2>
+      <p>Edad: 1 año<br>Raza: Conejo Angora</p>
+      <button class="adopt-button">¡Adóptame!</button>
+    </div>
+
+    <div class="pet-card">
+      <span class="pet-emoji">🐹</span>
+      <h2>Pelusa</h2>
+      <p>Edad: 6 meses<br>Raza: Hámster Sirio</p>
+      <button class="adopt-button">¡Adóptame!</button>
+    </div>
+  </section>
+
+</body>
+</html>
